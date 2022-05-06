@@ -18,6 +18,7 @@
 
 .__card_container_pd {
     /* background-color: bisque; */
+    width: 80%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -85,7 +86,6 @@
     font-size: 100%;
     color: #5F504D;
     font-family: HurmeBold;
-    padding: 0 10px;
 
 }
 
@@ -95,7 +95,7 @@
 
 /* media */
 
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1120px) {
 
 	.__card_container_pd {
        flex-wrap: wrap;
