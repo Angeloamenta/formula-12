@@ -7,17 +7,104 @@
 .container {
     width: 100%;
     height: 100vh;
-    background-color: aqua;
+    /* background-color: aqua; */
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 /* classi personali */
 
 
 .__card_container_pd {
-    width: 80%;
-    height: 500px;
-    background-color: bisque;
+    /* background-color: bisque; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.__card_pd {
+    min-height: 20rem;
+    height: 20rem;
+    width: calc(95% / 3);
+    background-color: #ffff;
+    display: flex;
+    box-shadow: 0 5px 10px #00000029;
+    border-radius: 12px;
+    padding: 0 5px;
+    position: relative;
+}
+
+.__card_pd:hover {
+    bottom: 10px;
+}
+
+.__card_img_pd {
+    height: 100%;
+    width: 25%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.__card_img_pd img {
+    width: 100%;
+    object-fit: contain;
+    height: 50%;
+}
+
+.__card_text_pd{
+    height: 100%;
+    width: 75%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+}
+
+.__card_text_top_pd{
+    /* background-color: blueviolet; */
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #5F504D;
+    font-family: HurmeBold;
+}
+
+
+
+.__card_text_bottom_pd{
+    /* background-color: chartreuse; */
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    font-size: 100%;
+    color: #5F504D;
+    font-family: HurmeBold;
+    padding: 0 10px;
+
+}
+
+
+
+
+
+/* media */
+
+@media screen and (max-width: 940px) {
+
+	.__card_container_pd {
+       flex-wrap: wrap;
+    
+    }
+	
+    .__card_pd {
+        width: calc(95% / 1);
+        margin: 15px 0;
+
+    }
 }
